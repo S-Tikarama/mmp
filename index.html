@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoWorld - Interactive Multimedia Car Experience</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>Tikaram Garage</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#interactive" class="nav-link">Interactive</a></li>
+                <li><a href="#videos" class="nav-link">Videos</a></li>
+                <li><a href="#sounds" class="nav-link">Sounds</a></li>
+                <li><a href="#quiz" class="nav-link">Quiz</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to AutoWorld</h1>
+            <p class="hero-subtitle">Experience the Ultimate Automotive Multimedia Journey</p>
+            <div class="animated-car">
+                <svg width="200" height="80" viewBox="0 0 200 80">
+                    <rect x="20" y="30" width="160" height="30" rx="15" fill="#ff4444" class="car-body"/>
+                    <rect x="40" y="20" width="120" height="20" rx="10" fill="#cc3333" class="car-roof"/>
+                    <circle cx="50" cy="65" r="12" fill="#333" class="wheel"/>
+                    <circle cx="150" cy="65" r="12" fill="#333" class="wheel"/>
+                    <circle cx="50" cy="65" r="8" fill="#666" class="wheel-inner"/>
+                    <circle cx="150" cy="65" r="8" fill="#666" class="wheel-inner"/>
+                </svg>
+            </div>
+            <button class="cta-button" onclick="playEngineSound()">Start Your Engine!</button>
+        </div>
+        <div class="hero-bg"></div>
+        <audio id="engineSound" preload="auto">
+            <source src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmAaBjiR1/LNeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmAaBjeQ2O/PfC4HI3nD8+GGSA0PU6jm7aFTEAk+ltryxnkpBSF+zPLaizsIGGS67OihUBELTKXh8bliHgg2jdXzzn0vBSR7x/PdiEELEl607OpbGQs7k9n0unEdBjmS2e/RfS0EI3nE9OOHSg4PUqjm7qJUEQg+ltrzxnkpBSF+zPLaizsIGGS67OihUBELTKXh8bliHgg2jdXzzn0vBSR7x/PdiEELEl607OpbGQs7k9n0unEdBjmS2e/RfS0EI3nE9OOHSg4PUqjm7qJUEQg+ltrzxnkpBSF+zPLaizsIGGS67OihUBELTKXh8bliHgg2jdXzzn0vBSR7x/PdiEELEl607OpbGQs7k9n0unEdBjmS2e/RfS0EI3nE9OOHSg4PUqjm7qJUEQg+ltrzxnkpBSF+zPLaizsIGGS67OihUBELTKXh8bliHgg2jdXzzn0vBSR7x/PdiEELEl607OpbGQs7k9n0unEdBjmS2e/RfS0EI3nE9OOHSg4PUqjm7qJUEQg+ltrzxnkpBSF+zPLaizsIGGS67OihUBELTKXh8bliHgg2jdXzzn0vBSR7x/PdiEELEl607OpbGQs7k9n0unEdBjmS2e/RfS0EI3nE9OOHSg4PUqjm7qJUEQg+ltrzxnkpBSF+zPLaizsIGGS67OihUBELTKXh8bliHgg2jdXzzn0vBSR7x/PdiEELEl607OpbGQs7k9n0unEdBjmS2e/RfS0EI3nE9OOHSg4PUqjm7qJUEQg+ltrzxnkpBSF+zPLaizsIGGS67OihUBELTKXh8bliHgg2jdXzzn0vBSR7x/PdiEELEl607OpbGQs7k9n0unEdBjmS2e/RfS0EI3nE9OOHSg4PUqjm7qJUEQg+ltrzxnkpBSF+zPLaizsIGGS67OihUBELTKXh8bliHgg2jdXzzn0vBSR7x/PdiEELEl607OpbGQs7k9n0unEdBjmS2e/RfS0EI3nE9OOHSg4PUqjm7qJUEQg+ltrzxnkpBSF+zPLaizsIGGS67OihUBELTKXh8bliHgg2jdXzzn0vBSR7x/PdiEELEl607OpbGQs7k9n0unEdBjmS2e/RfS0EI3nE9OOHSg4PUqjm7qJUEQg+ltrzxnkpBSF+zPLaizsIGGS67OihUBELTKXh8bliHgg2jdXzzn0vBSR7x/PdiEELEl607OpbGQs7k9n0unEdBjmS2e/RfS0EI3nE9OOHSg4PUqjm7qJUEQg+ltrzxnkpBSF+zPLaizsIGGS67OihUBELTKXh8bliHgg2jdXzzn0vBSR7x/PdiEELEl607OpbGQs7k9n0unEdBjmS2e/RfS0EI3nE9OOHSg4PUqjm7qJUEQg=" type="audio/wav">
+        </audio>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2 class="section-title">Car Gallery</h2>
+            <div class="gallery-container">
+                <div class="car-card" data-car="sports">
+                    <div class="car-image">
+                        <div class="car-placeholder sports-car">🏎️</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Sports Car</h3>
+                        <p>High-performance vehicle designed for speed and agility</p>
+                        <div class="specs">
+                            <span>0-60 mph: 3.2s</span>
+                            <span>Top Speed: 200+ mph</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card" data-car="luxury">
+                    <div class="car-image">
+                        <div class="car-placeholder luxury-car">🚗</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Luxury Sedan</h3>
+                        <p>Premium comfort and advanced technology features</p>
+                        <div class="specs">
+                            <span>Engine: V8 4.0L</span>
+                            <span>MPG: 25 city/35 hwy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card" data-car="suv">
+                    <div class="car-image">
+                        <div class="car-placeholder suv-car">🚙</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>SUV</h3>
+                        <p>Spacious and versatile for family adventures</p>
+                        <div class="specs">
+                            <span>Seating: 7-8 passengers</span>
+                            <span>Cargo: 84.3 cu ft</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card" data-car="electric">
+                    <div class="car-image">
+                        <div class="car-placeholder electric-car">⚡</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Electric Vehicle</h3>
+                        <p>Eco-friendly with zero emissions</p>
+                        <div class="specs">
+                            <span>Range: 300+ miles</span>
+                            <span>Charge: 15 min fast charge</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Section -->
+    <section id="interactive" class="section interactive-section">
+        <div class="container">
+            <h2 class="section-title">Build Your Car</h2>
+            <div class="car-builder">
+                <div class="car-parts">
+                    <h3>Drag parts to build your car:</h3>
+                    <div class="parts-container">
+                        <div class="part" draggable="true" data-part="body">🚗 Body</div>
+                        <div class="part" draggable="true" data-part="wheels">🛞 Wheels</div>
+                        <div class="part" draggable="true" data-part="engine">🔧 Engine</div>
+                        <div class="part" draggable="true" data-part="lights">💡 Lights</div>
+                    </div>
+                </div>
+                <div class="car-assembly" id="carAssembly">
+                    <div class="drop-zone" data-zone="body">Drop Body Here</div>
+                    <div class="drop-zone" data-zone="wheels">Drop Wheels Here</div>
+                    <div class="drop-zone" data-zone="engine">Drop Engine Here</div>
+                    <div class="drop-zone" data-zone="lights">Drop Lights Here</div>
+                </div>
+                <button id="resetCar" class="reset-btn">Reset Car</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section id="videos" class="section">
+        <div class="container">
+            <h2 class="section-title">Automotive Videos</h2>
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <div class="play-button" onclick="playVideo(1)">▶️</div>
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect width='300' height='200' fill='%23333'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-size='20'%3ECar Review%3C/text%3E%3C/svg%3E" alt="Car Review">
+                    </div>
+                    <h3>Sports Car Review</h3>
+                    <p>In-depth review of the latest sports car models</p>
+                </div>
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <div class="play-button" onclick="playVideo(2)">▶️</div>
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect width='300' height='200' fill='%23444'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-size='20'%3ERacing%3C/text%3E%3C/svg%3E" alt="Racing">
+                    </div>
+                    <h3>Racing Championship</h3>
+                    <p>Highlights from the latest racing championship</p>
+                </div>
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <div class="play-button" onclick="playVideo(3)">▶️</div>
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect width='300' height='200' fill='%23555'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-size='16'%3ETech Features%3C/text%3E%3C/svg%3E" alt="Tech Features">
+                    </div>
+                    <h3>Latest Tech Features</h3>
+                    <p>Exploring cutting-edge automotive technology</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sounds Section -->
+    <section id="sounds" class="section sounds-section">
+        <div class="container">
+            <h2 class="section-title">Automotive Sounds</h2>
+            <div class="sound-board">
+                <button class="sound-btn" onclick="playCarSound('engine')">
+                    🚗 Engine Sound
+                </button>
+                <button class="sound-btn" onclick="playCarSound('horn')">
+                    📯 Car Horn
+                </button>
+                <button class="sound-btn" onclick="playCarSound('brake')">
+                    🛑 Brake Sound
+                </button>
+                <button class="sound-btn" onclick="playCarSound('turbo')">
+                    💨 Turbo Boost
+                </button>
+                <button class="sound-btn" onclick="playCarSound('tire')">
+                    🏁 Tire Screech
+                </button>
+                <button class="sound-btn" onclick="playCarSound('ignition')">
+                    🔑 Ignition Start
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz" class="section quiz-section">
+        <div class="container">
+            <h2 class="section-title">Automotive Quiz</h2>
+            <div class="quiz-container">
+                <div class="question-counter">
+                    Question <span id="currentQuestion">1</span> of <span id="totalQuestions">5</span>
+                </div>
+                <div class="question" id="questionText">
+                    What does "MPG" stand for in automotive terms?
+                </div>
+                <div class="answers">
+                    <button class="answer-btn" onclick="selectAnswer(0)">Miles Per Gallon</button>
+                    <button class="answer-btn" onclick="selectAnswer(1)">Maximum Power Generated</button>
+                    <button class="answer-btn" onclick="selectAnswer(2)">Motor Performance Grade</button>
+                    <button class="answer-btn" onclick="selectAnswer(3)">Manual Power Gear</button>
+                </div>
+                <div class="quiz-result" id="quizResult"></div>
+                <button class="next-btn" id="nextBtn" onclick="nextQuestion()" style="display: none;">Next Question</button>
+                <div class="score" id="finalScore" style="display: none;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Video Player -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="video-player">
+                <div class="mock-video" id="mockVideo">
+                    <div class="video-controls">
+                        <button onclick="togglePlay()">▶️ Play/Pause</button>
+                        <div class="progress-bar">
+                            <div class="progress" id="progress"></div>
+                        </div>
+                        <span id="videoTitle">Video Title</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <h3>Tikaram Garage</h3>
+                    <p>Your Ultimate Automotive Multimedia Experience</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link">📘 Facebook</a>
+                    <a href="#" class="social-link">🐦 Twitter</a>
+                    <a href="#" class="social-link">📷 Instagram</a>
+                    <a href="#" class="social-link">💼 LinkedIn</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#gallery">Car Gallery</a></li>
+                    <li><a href="#interactive">Interactive Builder</a></li>
+                    <li><a href="#videos">Video Showcase</a></li>
+                    <li><a href="#sounds">Sound Experience</a></li>
+                    <li><a href="#quiz">Knowledge Quiz</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Car Categories</h4>
+                <ul class="footer-links">
+                    <li><a href="#gallery" onclick="filterCars('sports')">Sports Cars</a></li>
+                    <li><a href="#gallery" onclick="filterCars('luxury')">Luxury Sedans</a></li>
+                    <li><a href="#gallery" onclick="filterCars('suv')">SUVs & Trucks</a></li>
+                    <li><a href="#gallery" onclick="filterCars('electric')">Electric Vehicles</a></li>
+                    <li><a href="#gallery" onclick="filterCars('classic')">Classic Cars</a></li>
+                    <li><a href="#gallery" onclick="filterCars('racing')">Racing Cars</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <!-- <h4>Contact Info</h4>
+                <div class="contact-info">
+                    <p>📧 info@autoworld.com</p>
+                    <p>📞 +1 (555) 123-4567</p>
+                    <p>📍 123 Auto Street, Car City, CC 12345</p>
+                </div> -->
+                <div class="newsletter">
+                    <h5>Subscribe to Newsletter</h5>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" class="newsletter-input">
+                        <button class="newsletter-btn" onclick="subscribeNewsletter()">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2025 Tikaram Garage. All rights reserved. | Designed by Tikaram Subedi</p>
+                <div class="footer-bottom-links">
+                    <!-- <a href="#" onclick="showPrivacyPolicy()">Privacy Policy</a>
+                    <a href="#" onclick="showTerms()">Terms of Service</a>
+                    <a href="#" onclick="showCookiePolicy()">Cookie Policy</a> -->
+                </div>
+            </div>
+        </div>
+        
+        <!-- Animated Car at Bottom -->
+        <div class="footer-car">
+            <svg width="100" height="40" viewBox="0 0 100 40">
+                <rect x="10" y="15" width="80" height="15" rx="7" fill="#ff4444" class="footer-car-body"/>
+                <rect x="20" y="10" width="60" height="10" rx="5" fill="#cc3333"/>
+                <circle cx="25" cy="32" r="6" fill="#333" class="footer-wheel"/>
+                <circle cx="75" cy="32" r="6" fill="#333" class="footer-wheel"/>
+                <circle cx="25" cy="32" r="4" fill="#666"/>
+                <circle cx="75" cy="32" r="4" fill="#666"/>
+            </svg>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
